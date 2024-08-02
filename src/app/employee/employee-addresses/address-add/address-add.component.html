@@ -1,0 +1,26 @@
+<h2>Please enter the address details</h2>
+<form [formGroup]="addAddressForm" (submit)="onCreateAddress()" class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Country</mat-label>
+        <input matInput value="" formControlName="country">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>County</mat-label>
+        <input matInput value="" formControlName="county">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>City</mat-label>
+        <input matInput value="" formControlName="city">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Streeet</mat-label>
+        <input matInput value="" formControlName="street">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Number</mat-label>
+        <input matInput value="" formControlName="number">
+    </mat-form-field>
+    <div class="example-half-width">
+        <button mat-stroked-button type="submit">Create address</button>
+    </div>
+</form>

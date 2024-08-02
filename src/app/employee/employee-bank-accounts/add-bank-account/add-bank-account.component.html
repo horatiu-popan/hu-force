@@ -1,0 +1,14 @@
+<h2>Please enter the bank account details</h2>
+<form [formGroup]="addBankAccountForm" (submit)="onCreateBankAccount()" class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>IBAN</mat-label>
+        <input matInput value="" formControlName="iban">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Bank</mat-label>
+        <input matInput value="" formControlName="bank">
+    </mat-form-field>
+    <div class="example-half-width">
+        <button mat-stroked-button type="submit">Add bank account</button>
+    </div>
+</form>

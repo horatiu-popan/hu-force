@@ -1,0 +1,77 @@
+.employee-details-container {
+    max-width: 500px;
+    padding: 50px 150px;
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        .icon {
+            margin: 15px;
+            width: 96px;
+            height: 96px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #70809091;
+            color: #36454f;
+        }
+        .icon mat-icon {
+            font-size: 64px;
+            height: 64px;
+            width: 64px;
+        }
+        .name {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #36454f;
+        }
+    }
+    .details {
+      display: flex;
+      flex-direction: column;
+      .detail-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        color: #36454f;
+        .label {
+          font-weight: bold;
+        }
+        
+        .value {
+          font-size: 16px;
+        }
+      }
+    }
+    .actions {
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        padding: 10px;
+        button {
+            flex: 1;
+        }
+    }
+  }
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    padding: 50px 150px;
+    .close-icon {
+        margin-left: auto;
+        cursor: pointer;
+    }
+}
+  
+  
+  
+  
+  
+  

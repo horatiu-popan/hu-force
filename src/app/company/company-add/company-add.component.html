@@ -1,0 +1,26 @@
+<h2>Please enter the company details</h2>
+<form [formGroup]="addCompanyForm" (submit)="onCreateCompany()" class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput value="" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Fiscal code</mat-label>
+        <input matInput value="" formControlName="fiscalCode">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Registry no.</mat-label>
+        <input matInput value="" formControlName="registryNo">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>EUID</mat-label>
+        <input matInput value="" formControlName="euid">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Date of establishment</mat-label>
+        <input matInput value="" formControlName="dateOfEstablishment">
+    </mat-form-field>
+    <div class="example-half-width">
+        <button mat-stroked-button type="submit">Create company</button>
+    </div>
+</form>

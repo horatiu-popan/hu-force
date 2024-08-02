@@ -1,0 +1,17 @@
+<form [formGroup]="addContactForm" (submit)="onCreateContact()" class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Contact type</mat-label>
+        <mat-select formControlName="fieldType">
+            @for (type of fieldTypes; track type) {
+              <mat-option [value]="type.value">{{type.viewValue}}</mat-option>
+            }
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>{{ fieldLabel$ | async }}</mat-label>
+        <input matInput value="" formControlName="value">
+    </mat-form-field>
+    <div class="example-half-width">
+        <button mat-stroked-button type="submit">Create contact</button>
+    </div>
+</form>

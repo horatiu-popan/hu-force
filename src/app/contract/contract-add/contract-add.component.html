@@ -1,0 +1,18 @@
+<h2>Please enter contract details</h2>
+<form [formGroup]="addContractForm" (submit)="onCreateContract()" class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Contract number</mat-label>
+        <input matInput value="" formControlName="contractNumber">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Unique registration code</mat-label>
+        <input matInput value="" formControlName="uniqueRegistrationCode">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Day of employment</mat-label>
+        <input matInput value="" formControlName="dayOfEmployment">
+    </mat-form-field>
+    <div class="example-half-width">
+        <button mat-stroked-button type="submit">Add contract</button>
+    </div>
+</form>

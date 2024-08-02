@@ -1,0 +1,28 @@
+<div class="view-container">
+    <mat-nav-list class="list-container" role="list">
+        <mat-list-item role="listitem" *ngFor="let contact of contacts">
+            <div *ngIf="contact.workEmail" class="details-row">
+                <div class="details">
+                    <mat-icon>email</mat-icon>
+                    <span>{{ contact.workEmail }}</span>
+                 </div>
+                <mat-icon (click)="onDeleteContact(contact)">delete</mat-icon>
+            </div>
+            <div *ngIf="contact.personalEmail" class="details-row">
+                <div class="details">
+                    <mat-icon>alternate_email</mat-icon>
+                    <span>{{ contact.personalEmail }}</span>
+                </div>
+                <mat-icon (click)="onDeleteContact(contact)">delete</mat-icon>
+            </div>
+            <div *ngIf="contact.phoneNumber" class="details-row">
+                <div class="details">
+                    <mat-icon>phone</mat-icon>
+                    <span>{{ contact.phoneNumber }}</span>
+                </div>
+                <mat-icon (click)="onDeleteContact(contact)">delete</mat-icon>
+            </div>
+        </mat-list-item>
+    </mat-nav-list>
+</div>
+<app-add-contact></app-add-contact>

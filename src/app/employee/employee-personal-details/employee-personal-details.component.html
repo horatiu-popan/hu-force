@@ -1,0 +1,36 @@
+<div class="employee-details-container" *ngIf="!editView">
+    <div class="header">
+      <div class="icon">
+        <mat-icon>person</mat-icon>
+      </div>
+      <div class="name">
+        {{ employee.firstName }} {{ employee.lastName }}
+      </div>
+    </div>
+    
+    <div class="details">
+      <div class="detail-item">
+        <span class="label">Social Security Number:</span>
+        <span class="value">{{ employee.socialSecurityNumber }}</span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Birth Date:</span>
+        <span class="value">{{ employee.birthDate }}</span>
+      </div>
+      <div class="detail-item">
+        <span class="label">Birth Place:</span>
+        <span class="value">{{ employee.birthPlace }}</span>
+      </div>
+    </div>
+
+    <div class="actions">
+        <button mat-button color="primary" (click)="editView = true">Edit</button>
+        <button mat-button color="warn" (click)="onDelete()">Delete</button>
+    </div>
+  </div>
+
+<div *ngIf="editView" class="edit-container">
+    <mat-icon (click)="editView = false" class="close-icon">close</mat-icon>
+    <app-employee-edit [employee]="employee"></app-employee-edit>
+</div>
+  

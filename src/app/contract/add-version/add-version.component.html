@@ -1,0 +1,50 @@
+<h2>Please enter the version details</h2>
+<form [formGroup]="addVersionForm" (submit)="onCreateVersion()" class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Unique number</mat-label>
+        <input matInput value="" formControlName="uniqueNumber">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Version start date</mat-label>
+        <input matInput value="" formControlName="versionStartDate">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Termination date</mat-label>
+        <input matInput value="" formControlName="terminationDate">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Expiration date</mat-label>
+        <input matInput value="" formControlName="expirationDate">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Salary</mat-label>
+        <input matInput value="" formControlName="salary">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Fraction</mat-label>
+        <input matInput value="" formControlName="fraction">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Working days</mat-label>
+        <input matInput value="" formControlName="workingDays">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Vacation days</mat-label>
+        <input matInput value="" formControlName="vacationDays">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Expires</mat-label>
+        <input matInput value="" formControlName="expires">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Position</mat-label>
+        <input matInput value="" formControlName="position">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Department</mat-label>
+        <input matInput value="" formControlName="department">
+    </mat-form-field>
+    <div class="example-half-width">
+        <button mat-stroked-button type="submit">Add version</button>
+    </div>
+</form>

@@ -1,0 +1,25 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    padding: 50px 150px;
+    color: #36454f;
+    .example-form {
+        min-width: 150px;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        .example-full-width {
+            width: 100%;
+        }
+
+        .example-half-width {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

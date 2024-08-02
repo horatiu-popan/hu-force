@@ -1,0 +1,26 @@
+<h2>Please enter the new company details</h2>
+<form [formGroup]="editCompanyForm" (submit)="onEditCompany()" class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Fiscal code</mat-label>
+        <input matInput formControlName="fiscalCode">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Registry no.</mat-label>
+        <input matInput formControlName="registryNo">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>EUID</mat-label>
+        <input matInput formControlName="euid">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Date of establishment</mat-label>
+        <input matInput formControlName="dateOfEstablishment">
+    </mat-form-field>
+    <div class="example-half-width">
+        <button mat-stroked-button type="submit">Submit changes</button>
+    </div>
+</form>

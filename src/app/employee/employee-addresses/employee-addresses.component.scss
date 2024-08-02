@@ -1,0 +1,23 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: -webkit-fill-available;
+    justify-content: center;
+    color: #36454f;
+    .view-container {
+        padding: 12px 0 0 12px;
+        min-width: 1000px;
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            color: #36454f;
+        }
+        .create-item {
+            display: flex;
+            gap: 20px;
+            color: #708090;
+        }
+    }
+}

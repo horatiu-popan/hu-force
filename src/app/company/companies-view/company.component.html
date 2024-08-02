@@ -1,0 +1,17 @@
+<h2>Select your company</h2>
+<div class="view-container">
+    <mat-nav-list class="list-container" role="list">
+        <mat-list-item role="listitem" *ngFor="let company of companyList" [routerLink]="['/company/details', company.id]">
+            <div class="list-item">
+                <mat-icon>business</mat-icon>
+                <span>{{company.name}}</span>
+            </div>
+        </mat-list-item>
+        <mat-list-item role="listitem" routerLink="/company/add">
+            <div class="create-item">
+                <mat-icon>add_circle</mat-icon>
+                <span>Create a new company</span>
+            </div>
+        </mat-list-item>
+    </mat-nav-list>
+</div>

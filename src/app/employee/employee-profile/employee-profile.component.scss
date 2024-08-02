@@ -1,0 +1,9 @@
+.example-container {
+    width: auto;
+    min-height: -webkit-fill-available;
+    .list-item {
+        display: flex;
+        gap: 20px;
+        color: #36454f;
+    }
+  }

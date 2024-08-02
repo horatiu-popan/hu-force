@@ -1,0 +1,11 @@
+<div class="view-container">
+    <mat-nav-list class="list-container" role="list">
+        <mat-list-item role="listitem" *ngFor="let address of addressList">
+            <div class="list-item">
+                <span>{{address | addressFormatter}}</span>
+                <mat-icon (click)="onDeleteAddress(address)">delete</mat-icon>
+            </div>
+        </mat-list-item>
+    </mat-nav-list>
+</div>
+<button mat-stroked-button [routerLink]="['add']">Add address</button>
